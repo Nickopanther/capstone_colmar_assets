@@ -3,21 +3,170 @@ html {
 }
 
 body {
-  
+  font-size: 16px;
+  color: #505050;
+  background-color: #F5F5F5;
 }
 
+/* logo at the top*/
+.colmaracademy {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.colmaracademy span {
+  color: darkgray;
+}
+
+/* Navigation list */
+li {
+  list-style-type: none;
+}
+
+/* First panel */
+.content.top, .three {
+  background-color: #D8D8D8;
+}
+
+/* Image from first panel */
 .picture.banner {
     background-image: url('../images/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 25rem;
+    height: 600px;
+    width: 800px;
 }
 
+/* Learn something new every day */
+.starthere {
+  background-color: #505050;
+  color: white;
+  width: 90px;
+}
+
+.starthere p {
+  padding: 8px 0;
+  text-align: center;
+}
+
+/* Image from second panel */
 .picture.two {
     background-image: url('../images/information-main.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 25rem;
+    height: 600px;
+    width: 800px;
+}
+
+/* Read more */
+.small-info a {
+  text-decoration: none;
+  color: #3399FF;
+}
+/* Orientation date image */
+.small-info.image.one {
+  background-image: url('../images/information-orientation.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Our campus */
+.small-info.image.two {
+  background-image: url('../images/information-campus.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Our guest lecture */
+.small-info.image.three {
+  background-image: url('../images/information-guest-lecture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Start learning details */
+.course.details {
+  background-color: #F5F5F5;
+}
+
+/* Software engineering image */
+.course.software.image {
+  background-image: url('../images/course-software.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Computer art image */
+.course.computer.image {
+  background-image: url('../images/course-computer-art.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Design image */
+.course.design.image {
+  background-image: url('../images/course-design.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Data image */
+.course.data.image {
+  background-image: url('../images/course-data.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Business image */
+.course.business.image {
+  background-image: url('../images/course-business.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+/* Marketing image */
+.course.marketing.image {
+  background-image: url('../images/course-marketing.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+video {
+  height: 500px;
+  width: 600px;
+}
+
+/* Fisma */
+.small-info.image.four {
+  background-image: url('../images/thesis-fisma.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+.small-info.image.five {
+  background-image: url('../images/thesis-now-and-then.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 600px;
 }
