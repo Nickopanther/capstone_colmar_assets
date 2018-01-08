@@ -6,16 +6,89 @@ body {
   font-size: 16px;
   color: #505050;
   background-color: #F5F5F5;
+  font-family: "Helvetica", sans-serif;
 }
 
-/* logo at the top*/
+/* Flex container */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header */
+header {
+  align-items: center;
+  background-color: #F5F5F5;
+  height: 64px;
+
+}
+
+/* Logo - image and words */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image */
+.logo.design {
+  padding-left: 24px;
+}
+
+.logo.design img {
+  height: 64px;
+}
+
+/* Navigation list */
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+ul li {
+  display: inline-block;
+  padding: 24px 16px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  nav {
+    flex-grow: 0;
+  }
+
+  .mobile-nav div {
+    text-align: center;
+  }
+}
+
+/* logo text at the top*/
 .colmaracademy {
-  font-weight: bold;
   font-size: 2em;
+}
+
+.colmaracademy p {
+  font-weight: bold;
 }
 
 .colmaracademy span {
   color: darkgray;
+  font-weight: normal;
 }
 
 /* Navigation list */
@@ -24,8 +97,30 @@ li {
 }
 
 /* First panel */
-.content.top, .three {
+.content.top {
   background-color: #D8D8D8;
+  padding: 32px 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content.top {
+    padding: 0;
+  }
+}
+
+.content.three {
+  background-color: #D8D8D8;
+  padding: 32px 24px;
+}
+
+.content.two {
+  padding: 32px 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content.two, .three {
+    display: none;
+  }
 }
 
 /* Image from first panel */
@@ -34,19 +129,66 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
-    width: 800px;
+    width: 50%;
+    margin: 32px 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .picture.banner {
+    width: 100%;
+    margin: 0;
+  }
+
+  .learn-mobile {
+    display: block !important;
+    padding: 32px 16px;
+  }
+
+  .learn {
+    display: none;
+  }
+
 }
 
 /* Learn something new every day */
+.learn {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  padding: 2em 3em;
+  width: 35%;
+}
+
+.learn-mobile {
+  display: none;
+}
+
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.titletwo {
+  font-size: 2em;
+  margin-left: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 55%;
+}
+
 .starthere {
   background-color: #505050;
   color: white;
-  width: 90px;
+  width: 30em;
+  margin: 0 auto;
+  padding: 0.1em 2em;
 }
 
 .starthere p {
-  padding: 8px 0;
+  margin-top: 0.9em;
   text-align: center;
+  font-size: 2em;
 }
 
 /* Image from second panel */
@@ -54,8 +196,9 @@ li {
     background-image: url('../images/information-main.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
-    width: 800px;
+    height: 500px;
+    width: 50%;;
+    margin: 32px 24px;
 }
 
 /* Read more */
@@ -63,110 +206,117 @@ li {
   text-decoration: none;
   color: #3399FF;
 }
-/* Orientation date image */
-.small-info.image.one {
-  background-image: url('../images/information-orientation.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+
+.small-info.image img {
+  padding: 16px 16px;
+  width: 200px;
 }
 
-/* Our campus */
-.small-info.image.two {
-  background-image: url('../images/information-campus.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+/* The box with all the little boxes inside */
+.info.small.two {
+  width: 40%;
+  right: 0;
+  position: absolute;
+  padding: 16px 16px;
 }
 
-/* Our guest lecture */
-.small-info.image.three {
-  background-image: url('../images/information-guest-lecture.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+/* Flexbox for the little boxes */
+.small-info.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Start learning details */
+.small-info.box:hover {
+  background-color: #D8D8D8;
+}
+
+.small-info.content {
+  font-size: 1.5em;
+}
+
+.space {
+  background-color: #D8D8D8;
+}
+
+/* Start learning courses */
+.content.three h1 {
+  text-align: center;
+}
+
+.courses-one {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 72px;
+}
+
+.courses-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 72px;
+}
+
 .course.details {
-  background-color: #F5F5F5;
+  margin: 32px 32px;
+  height: 90%;
+  width: 82.5%;
+  background-color: white;
+  font-size: 18px;
 }
 
-/* Software engineering image */
-.course.software.image {
-  background-image: url('../images/course-software.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+.course.details img {
+  width: 100%;
 }
 
-/* Computer art image */
-.course.computer.image {
-  background-image: url('../images/course-computer-art.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+.course.details h2 {
+  padding: 8px 16px;
+  margin: 8px 16px;
 }
 
-/* Design image */
-.course.design.image {
-  background-image: url('../images/course-design.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+.course.details p {
+  padding: 0 16px;
+  margin: 8px 16px;
 }
 
-/* Data image */
-.course.data.image {
-  background-image: url('../images/course-data.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
-}
 
-/* Business image */
-.course.business.image {
-  background-image: url('../images/course-business.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
-}
 
-/* Marketing image */
-.course.marketing.image {
-  background-image: url('../images/course-marketing.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+/* Thesis Exhibit */
+.thesis h2 {
+  text-align: center;
+  margin: 32px 32px;
 }
 
 video {
-  height: 500px;
-  width: 600px;
+  width: 50%;
+  margin: 32px 24px;
 }
 
-/* Fisma */
-.small-info.image.four {
-  background-image: url('../images/thesis-fisma.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+/* The box with all the little boxes inside */
+.info.small.four {
+  width: 40%;
+  right: 0;
+  position: absolute;
+  padding: 16px 16px;
 }
 
-.small-info.image.five {
-  background-image: url('../images/thesis-now-and-then.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 600px;
+
+.titlethree {
+  font-size: 2em;
+  margin-left: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 55%;
+}
+
+.footer {
+  margin: 16px 24px;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+ .right {
+  float: right;
 }

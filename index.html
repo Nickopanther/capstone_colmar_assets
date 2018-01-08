@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>Colmaracademy</title>
+
     <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+
   </head>
   <body>
-    <header>
+    <!-- Colmaracademy header -->
+    <header class="flex-container">
       <!-- Logo here
           on the left hand
               corner -->
@@ -18,12 +21,15 @@
         <p>COLMAR<span>ACADEMY</span></p>
       </div>
       </div>
-      <!--
-      <img src="resources/images/ic-login.svg" />
-      <img src="resources/images/ic-on-campus.svg" />
-      <img src="resources/images/ic-online.svg" />
-      -->
-      <nav>
+
+      <nav class="mobile-nav">
+        <div><img src="resources/images/ic-logo.svg" /></div>
+      <div><img src="resources/images/ic-on-campus.svg" /></div>
+      <div><img src="resources/images/ic-online.svg" /></div>
+      <div><img src="resources/images/ic-login.svg" /></div>
+    </nav>
+
+      <nav class="web">
         <ul>
           <li>On campus</li>
           <li>Online</li>
@@ -32,10 +38,9 @@
         </ul>
       </nav>
     </header>
+
     <div class="content top banner">
-      <div class="picture banner">
-        <!-- Background here on the left -->
-      </div>
+      <div class="learn">
       <div class="title">
         <h1>Learn something new everyday</h1>
         <p>Learn something brand new every day
@@ -45,11 +50,70 @@
         <p>Start here</p>
       </div>
     </div>
+    <div class="picture banner">
+      <!-- Background here on the left -->
+    </div>
+
+    <div class="learn-mobile">
+    <div class="title">
+      <h1>Learn something <br /> new everyday</h1>
+      <p>Learn something brand new every day
+        with the help of this lovely website!</p>
+    </div>
+    <div class="starthere">
+      <p>Start here</p>
+    </div>
+  </div>
+</div>
+
     <div class="content two">
+
+      <div class="info small two">
+        <div class="small-info box">
+          <div class="small-info image one">
+            <!-- Orientation date image  -->
+            <img src="resources/images/information-orientation.jpg" />
+          </div>
+        <div class="small-info content">
+          <!-- Orientation date -->
+          <h2>Orientation date</h2>
+          <p>Tue 10/11 &amp; Wed 10/122: 8am-3pm</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="space"><hr /></div>
+      <div class="small-info box">
+        <div class="small-info image two">
+          <!-- Our campus image -->
+          <img src="resources/images/information-campus.jpg" />
+        </div>
+        <div class="small-info content">
+          <!-- Our campus -->
+          <h2>Our campus</h2>
+          <p>Find which campus is close by you</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="space"><hr /></div>
+      <div class="small-info box">
+        <div class="small-info image three">
+          <!-- Our guest lecture image -->
+          <img src="resources/images/information-guest-lecture.jpg" />
+        </div>
+        <div class="small-info content">
+          <!-- Our guest lecture -->
+          <h2>Our guest lecture</h2>
+          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+
       <div class="info large two">
           <div class="picture two">
             <!-- Image here on left -->
           </div>
+        <div class="titletwo">
         <h2>It doesn't hurt to keep practicing</h2>
 
         <p>"Practice makes perfect! That's what they always say.
@@ -58,97 +122,76 @@
           you. Yes, you my dear! Just keep on doing it until it's right."</p>
 
           <p>Emanuel, Sr Strategist at Hiring.com</p>
-      </div>
-      <div class="info small two">
-        <div class="small-info two">
-          <!-- Orientation date -->
-          <div class="small-info image one">
-            <!-- Orientation date image  -->
-          </div>
-          <h3>Orientation date</h3>
-          <p>Tue 10/11 &amp; Wed 10/122: 8am-3pm</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="small-info two">
-          <!-- Our campus -->
-          <div class="small-info image two">
-            <!-- Our campus image -->
-          </div>
-          <h3>Our campus</h3>
-          <p>Find which campus is close by you</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="small-info three">
-          <!-- Our guest lecture -->
-          <div class="small-info image three">
-            <!-- Our guest lecture image -->
-          </div>
-          <h3>Our guest lecture</h3>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <a href="#">Read More</a>
         </div>
       </div>
     </div>
+
     <div class="content three">
       <!-- Start Learning -->
-      <h2>Start learning</h2>
-      <div class="courses">
+      <h1>Start learning</h1>
+      <div class="courses-one">
         <div class="course">
-          <!-- Software engineering -->
-          <div class="course software image">
-            <!-- Software engineering image -->
-          </div>
           <div class="course details">
-            <h3>Software Engineering</h3>
+
+          <!-- Software engineering -->
+          <img src="resources/images/course-software.jpg" />
+
+            <!-- Software engineering image -->
+            <h2>Software Engineering</h2>
             <p>COURSES</p>
             <p>Web Development, Mobile Development,
               iOT, APIs</p>
-          </div>
+            </div>
         </div>
         <div class="course">
             <!-- Computer art -->
-          <div class="course computer image">
-            <!-- Computer art image -->
-          </div>
           <div class="course details">
-            <h3>Computer art</h3>
+            <!-- Computer art image -->
+            <img src="resources/images/course-computer-art.jpg" />
+
+            <h2>Computer art</h2>
             <p>COURSES</p>
-            <p>Imaging &amp; Design, Web Design,
-              Motion Graphics &amp; Visual Effects,
-              Computer Animation
-          </div>
+            <p>Imaging &amp; Design, Web Design,  <br />
+              Motion Graphics &amp; Visual Effects, <br />
+              Computer Animation</p>
+              </div>
         </div>
         <div class="course">
           <!-- Design -->
-          <div class="course design image">
-            <!-- Design image -->
-          </div>
           <div class="course details">
-            <h3>Design</h3>
+            <!-- Design image -->
+            <img src="resources/images/course-design.jpg" />
+
+            <h2>Design</h2>
             <p>COURSES</p>
             <p>User Experience Design, User Research,
               Visual Design</p>
           </div>
         </div>
+        </div>
+
+        <div class="courses-two">
         <div class="course">
           <!-- Data -->
-          <div class="course data image">
-            <!-- Data image -->
-          </div>
           <div class="course details">
-            <h3>Data</h3>
+            <!-- Data image -->
+            <img src="resources/images/course-data.jpg" />
+
+            <h2>Data</h2>
             <p>COURSES</p>
             <p>Data Science, Big Data,
               SQL, Data Visualization</p>
           </div>
         </div>
+
         <div class="course">
+
           <!-- Business -->
-          <div class="course business image">
-            <!-- Business image -->
-          </div>
           <div class="course details">
-            <h3>Business</h3>
+            <!-- Business image -->
+            <img src="resources/images/course-business.jpg" />
+
+            <h2>Business</h2>
             <p>COURSES</p>
             <p>Product Development, Business Development,
               Startup</p>
@@ -156,21 +199,47 @@
         </div>
         <div class="course">
           <!-- Marketing -->
-          <div class="course marketing image">
-            <!-- Marketing image -->
-          </div>
           <div class="course details">
-            <h3>COURSES</h3>
-            <p>COURSES</p>
-            <p>Analytics, Content Marketing,
-              Mobile Marketing</p>
+            <!-- Marketing image -->
+            <img src="resources/images/course-marketing.jpg" />
+
+              <h2>MARKETING</h2>
+              <p>COURSES</p>
+              <p>Analytics, Content Marketing,
+                Mobile Marketing</p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="content four">
+      <div class="thesis">
       <h2>Thesis exhibit</h2>
-      <div class="info large four">
+    </div>
+    <div class="info small four">
+      <div class="small-info box">
+        <div class="small-info image four">
+          <!-- Fisma image goes here -->
+          <img src="resources/images/thesis-fisma.jpg" />
+        </div>
+        <div class="small-info content">
+          <h3>Fisma: Design and Prototype</h3>
+          <p>Designer showcase of new prototype product</p>
+        </div>
+      </div>
+
+      <div class="small-info box">
+          <div class="small-info image five">
+            <!-- Now and then image goes here -->
+            <img src="resources/images/thesis-now-and-then.jpg" />
+          </div>
+          <div class="small-info content">
+          <h3>Now and then</h3>
+          <p>Research study about New York</p>
+        </div>
+      </div>
+      </div>
+
         <div class="thesis-video">
           <video src="resources/videos/thesis.mp4"
                  controls="controls">
@@ -178,6 +247,9 @@
           video through HTML5.
           </video>
         </div>
+
+
+        <div class="titlethree">
         <h2>Reimagine urban</h2>
 
         <p>"Try to imagine a kind of urban where every where you
@@ -185,32 +257,16 @@
           would like. Wouldn't that be amazing? But then again, if
           you are tempted to spend lots of money, that may not be so
           amazing then"</p>
-      </div>
-      <div class="info small four">
-        <div class="small-info image four">
-          <!-- Fisma image goes here -->
         </div>
-        <div class="small-info four">
-          <h3>Fisma: Design and Prototype</h3>
-          <p>Designer showcase of new prototype product</p>
-        </div>
-      </div>
 
-      <div class="info small five">
-        <div class="small-info five">
-          <div class="small-info image five">
-            <!-- Now and then image goes here -->
-          </div>
-          <h3>Now and then</h3>
-          <p>Research study about New York</p>
-        </div>
-      </div>
     </div>
     </div>
+
     <div class="footer">
       <footer>
         <p class="left">&copy; 2016 Colmar Academy. All rights reserved</p>
         <p class="right">Terms Privacy</p>
+
       </footer>
     </div>
   </body>
