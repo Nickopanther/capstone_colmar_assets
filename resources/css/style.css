@@ -117,12 +117,6 @@ li {
   padding: 32px 24px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .content.two, .three {
-    display: none;
-  }
-}
-
 /* Image from first panel */
 .picture.banner {
     background-image: url('../images/banner.jpg');
@@ -148,6 +142,13 @@ li {
     display: none;
   }
 
+  .learn-mobile .title {
+    margin: 32px 16px;
+  }
+
+  .learn-mobile .title p {
+    margin-bottom: 24px;
+  }
 }
 
 /* Learn something new every day */
@@ -162,7 +163,6 @@ li {
 .learn-mobile {
   display: none;
 }
-
 
 .title {
   font-size: 2em;
@@ -208,7 +208,7 @@ li {
 }
 
 .small-info.image img {
-  padding: 16px 16px;
+  padding: 16px;
   width: 200px;
 }
 
@@ -239,9 +239,57 @@ li {
   background-color: #D8D8D8;
 }
 
+/* Hiding the boxes for mobile when it's not in mobile view */
+.info-small-two-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* The boxes that are viewed in desktop mode are gone */
+  .info.small.two {
+    display: none;
+  }
+
+  .info.large.two {
+    display: none;
+  }
+
+  .info-small-two-mobile {
+    display: block !important;
+    padding: 16px;
+    background-color: #F5F5F5;
+  }
+
+  .small-info-content-mobile {
+    margin: 16px;
+  }
+
+  .small-info-image-mobile {
+    margin-top: 64px;
+  }
+
+  /* Read more */
+  .small-info-content-mobile a {
+    text-decoration: none;
+    color: #3399FF;
+  }
+}
+
 /* Start learning courses */
 .content.three h1 {
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .course {
+    display: none;
+  }
+
+  .content.three {
+    background-color: white;
+  }
+
+
 }
 
 .courses-one {
@@ -278,7 +326,24 @@ li {
   margin: 8px 16px;
 }
 
+.course-details-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 1024px) {
+  .course-details-mobile {
+    display: block !important;
+    background-color: white;
+  }
+
+  .course-details-mobile h2 {
+    background-color: #D8D8D8;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 /* Thesis Exhibit */
 .thesis h2 {
@@ -286,6 +351,12 @@ li {
   margin: 32px 32px;
 }
 
+@media only screen and (max-width: 1024px) {
+  video {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
 video {
   width: 50%;
   margin: 32px 24px;
@@ -306,6 +377,20 @@ video {
   margin-top: 24px;
   margin-bottom: 24px;
   width: 55%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .titlethree {
+    display: none;
+  }
+
+  .small-info  {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
 }
 
 .footer {
